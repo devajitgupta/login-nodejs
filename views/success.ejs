@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Success</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="p-4">Welcome Your name is => <h1 style="color:red;"> <%= user.username %> </h1>
+        <h2 class="p-2"> successfully login. </h2>
+        <a class="btn btn-danger" href="/logout">Logout</a>
+        <div class="container p-3">
+            <form action="/addmsg" method="POST">
+                <div class="form-group">
+                  
+                <div class="form-group">
+                
+                </div>
+                <div>
+                    <% user.messages.forEach(function(msg, index){ %>
+                    <h4><%= msg %></h4>
+                    <% }) %>
+                </div>
+            </form>
+            <p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

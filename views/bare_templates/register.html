@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center p-2 text-danger">Register</h1>
+        <div style="margin: 0 auto;" class="col-12 col-md-6 col-lg-5 p-5 customborder">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" autocomplete="off"
+                        placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="username">Choose your username</label>
+                    <input type="text" class="form-control" name="username" id="username" autocomplete="off"
+                        placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Choose a password</label>
+                    <input type="password" class="form-control" name="password" id="password" autocomplete="off"
+                        placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmpassword">Confirm Your Password</label>
+                    <input type="password" class="form-control" name="confirmpassword" id="confirmpassword"
+                        autocomplete="off" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-outline-primary" value="Register">
+                </div>
+                <p>Already Registered ? <a class="card-link" href="/login">LOGIN Here</a> </p>
+            </form>
+        </div>
+    </div>
+   </body>
+
+</html>

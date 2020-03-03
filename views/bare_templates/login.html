@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/united/bootstrap.min.css">
+    <title>Authentications</title>
+    <style>
+        .customborder {
+            border-radius: 2%;
+            border: 2px solid #E95420;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center p-3">Login page</h3>
+        <div style="margin: 0 auto;" class="col-12 col-md-6 col-lg-5 p-5 customborder">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input type="email" class="form-control" name="email" id="username" autocomplete="off"
+                        placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" autocomplete="off"
+                        placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-outline-primary" value="Login">
+                </div>
+                <p>not registered ? <a class="card-link" href="/">Register</a> </p>
+            </form>
+        </div>
+    </div>
+
+  </body>
+
+</html>
